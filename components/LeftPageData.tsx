@@ -34,11 +34,11 @@ const LeftPageData = () => {
             <AccordionContent key={bcf.id}>
               <Accordion type="single" collapsible>
                 <AccordionItem value={item.id} key={index}>
-                  <AccordionTrigger className="text-xs pl-9">
+                  <AccordionTrigger className="text-xs pl-7 pt-0">
                     {bcf.name}
                   </AccordionTrigger>
                   {bcf.bcfBoards.map((board: any) => (
-                    <AccordionContent className="text-xs pl-20" key={board.id}>
+                    <AccordionContent className="text-xs pl-12" key={board.id}>
                       {board.name}
                     </AccordionContent>
                   ))}

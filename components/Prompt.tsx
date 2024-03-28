@@ -40,14 +40,14 @@ const Prompt = () => {
           placeholder="Search..."
           value={searchPrompt}
           onChange={(e) => setSearchPrompt(e.target.value)}
-          className="px-4 w-full rounded-lg"
+          className="px-4 w-full rounded-3xl py-[3px]"
         />
       </div>
       <div className="flex flex-wrap justify-center">
         {filterData().map((item: any) => (
-          <Card className="m-3 w-36">
-            <CardHeader>
-              <CardTitle className="text-[#480750]">{item.name}</CardTitle>
+          <Card className="m-3 w-36 flex flex-col justify-between">
+            <CardHeader className="p-4">
+              <CardTitle className="text-[#480750] text-center text-xl">{item.name}</CardTitle>
             </CardHeader>
             <CardContent className="pb-0">
               <Image
